@@ -492,3 +492,127 @@ span {
 .services_card:hover .services_card-icon {
   stroke: #ef7f1a;
 }
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+
+.swiper {
+  width: 307px;
+  height: 223px;
+}
+
+.swiper-pagination-bullet {
+  opacity: 1;
+  background: #fff;
+  width: 8px;
+  height: 8px;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  background: #ef7f1a;
+}
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+
+.services_blocks {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.5s;
+  visibility: hidden;
+}
+
+.services_blocks.active {
+  visibility: visible;
+}
+
+.services_block {
+  width: 1000px;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.5s;
+  padding: 50px 110px;
+  background: url(../images/services_bg.png) white no-repeat right bottom;
+  opacity: 0;
+}
+
+.services_block.active {
+  opacity: 1;
+  z-index: 2;
+}
+
+.services_swiper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.services_swiper-titles {
+  max-width: 375px;
+}
+
+.services_swiper-titles h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.services_swiper-titles p {
+  color: #000;
+  width: 70%;
+}
+
+.services_drops {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 37px;
+}
+
+.services_drop {
+  max-width: 363px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.services_drop-items {
+  display: flex;
+  gap: 17px;
+  align-items: center;
+}
+
+.services_drop-item h3 {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.services_drop-item p {
+  color: #000;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.services_block-span {
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 30px;
+  padding: 10px;
+}
